@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Денис Никонов](https://up.htmlacademy.ru/htmlcss/24/user/935631).
-* Наставник: Евгений Баранков (https://htmlacademy.ru/profile/id518169).
+* Наставник: Алексей Удод (https://htmlacademy.ru/profile/id523387).
 
 ---
 
