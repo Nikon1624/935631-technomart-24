@@ -48,8 +48,16 @@
         </ul>
         <h1 class="page_title">Перфораторы</h1>
         <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <div class="filters__manufacturer">
+            <h2 class="filters__title">Фильтр:</h2>
+            <div class="fillters__range-price filters-range-price">
+                <h3 class="filters-range-price__title">Цена:</h3>
+                <form action="#" method="get">
+                    <input class="filters-range-price__range-input" type="range" name="range-price" min="0" max="30000">
+                </form>
+                <p class="filters-range-price__values"><span>0</span> - <span>30000</span></p>
+            </div>
+            <div class="filters__manufacturer filters-manufacturer">
+                <h3 class="filters-manufacturer__title">Производители:</h3>
                 <form action="#" method="get">
                     <label>
                         <input type="checkbox" name="BOSCH" checked>
@@ -73,10 +81,11 @@
                     </label>
                 </form>
             </div>
-            <div class="filters__power-type">
+            <div class="filters__power-type filters-power-type">
+                <h3 class="filters-manufacturer__title">Питание:</h3>
                 <form action="#" method="get">
                     <label>
-                        <input type="radio" name="power-type" value="Аккумуляторные">
+                        <input type="radio" name="power-type" value="Аккумуляторные" checked>
                         Аккумуляторные
                     </label>
                     <label>
@@ -86,6 +95,16 @@
                     <input type="button" value="Показать">
                 </form>
             </div>
+        </section>
+        <section class="sort">
+            <h3 class="sort__title">Сортировка:</h3>
+            <ul class="sort__list">
+                <li class="sort__item--current"><a href="#">По цене</a></li>
+                <li class="sort__item"><a href="#">По типу</a></li>
+                <li class="sort__item"><a href="#">По функционалу</a></li>
+            </ul>
+            <button class="sort__button sort-btn-top" type="button">^</button>
+            <button class="sort__button sort-btn-down" type="button">^</button>
         </section>
         <section class="products">
             <h2 class="visually-hidden">Список товаров</h2>
@@ -144,10 +163,10 @@
             </ul>
             <nav class="pagination">
                 <ul class="pagination__list">
-                    <li class="pagination__item--current><a href="#">1</a></li>
-                    <li class="pagination__item><a href="#">2</a></li>
-                    <li class="pagination__item><a href="#">3</a></li>
-                    <li class="pagination__item><a href="#">Следущая</a></li>
+                    <li class="pagination__item--current"><a href="#">1</a></li>
+                    <li class="pagination__item"><a href="#">2</a></li>
+                    <li class="pagination__item"><a href="#">3</a></li>
+                    <li class="pagination__item"><a href="#">Следущая</a></li>
                 </ul>
             </nav>
         </section>
