@@ -5,15 +5,17 @@
     <title>Интернет-магазин строительных материалов и инструментов для ремонта</title>
 </head>
 <body>
+
     <header class="main-header">
-        <a class="main-header__logo" href="#">Техномарт</a>
+
+        <a class="main-header__logo" href="#"><span class="visually-hidden">Логотип компании "Техномарт"</span>Техномарт</a>
         <form class="search-form" action="#" method="get">
-            <label class="search-form__label" for="search">Поиск:</label>
-            <input class="search-form__input" type="search" name="seach-field" id="search">
+            <input class="search-form__input" type="search" name="seach-field" placeholder="Поиск:" aria-label="Поиск по сайту">
         </form>
         <a class="main-header__bookmarks" href="#">Закладки: 0</a>
         <a class="main-header__cart" href="#">Корзина: 0</a>
         <a class="main-header__place-order" href="#">Оформить заказ</a>
+
         <h1 class="main-header__page-title">
             Интернет-магазин
             строительных материалов
@@ -27,6 +29,7 @@
             <li class="user-navigation__item"><a class="user-navigation__login-link" href="#">Войти</a></li>
         </ul>
         <a class="main-header__registration-link" href="#">Регистрация</a>
+
         <nav class="main-navigation">
             <ul class="main-navigation__list">
                 <li class="main-navigation__item">
@@ -52,58 +55,67 @@
                 </li>
             </ul>
         </nav>
+
     </header>
 
 
+
+
     <main>
+
         <section class="special-offer">
             <h2 class="visually-hidden">Специальные предложения</h2>
+
             <ul class="special-offer__list">
                 <li class="special-offer__item special-offer__item_material special-offer__item_new">
                     <h3 class="special-offer__title">Материалы</h3>
-                    <a class="special-offer__link special-offer__link_material" href="#">На любой вкус</a>
+                    <a class="special-offer__link special-offer__link_material" href="#" aria-label="Ссылка на все материалы">На любой вкус</a>
+                    <span class="visually-hidden">Новинка</span>
                 </li>
                 <li class="special-offer__item special-offer__item_tool">
                     <h3 class="special-offer__title">Инструмент</h3>
-                    <a class="special-offer__link special-offer__link_tool" href="#">На все случаи</a>
+                    <a class="special-offer__link special-offer__link_tool" href="#" aria-label="Ссылка на все инструменты">На все случаи</a>
                 </li>
                 <li class="special-offer__item special-offer__item_technique">
                     <h3 class="special-offer__title">Техника</h3>
-                    <a class="special-offer__link special-offer__link_technique" href="#">Для стройки</a>
+                    <a class="special-offer__link special-offer__link_technique" href="#" aria-label="Ссылка на всю технику">Для стройки</a>
                 </li>
                 <li class="special-offer__slider special-offer-slider">
                     <div class="special-offer-slider__first-slide">
                         <h3 class="special-offer-slider__title">Перфораторы</h3>
                         <p class="special-offer-slider__text">Настоящие мужские игрушки</p>
-                        <button class="special-offer-slider__control_prev" type="button">L</button>
-                        <button class="special-offer-slider__control_next" type="button">R</button>
+                        <button class="special-offer-slider__control_prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
+                        <button class="special-offer-slider__control_next" type="button" aria-label="Кнопка следующего слайда">R</button>
                         <a class="special-offer-slider__link" href="#">Открыть каталог</a>
                     </div>
                     <div class="special-offer-slider__second-slide">
                         <h3 class="special-offer-slider__title">Дрели</h3>
                         <p class="special-offer-slider__text">Соседям на радость!</p>
-                        <button class="special-offer-slider__control_prev" type="button">L</button>
-                        <button class="special-offer-slider__control_next" type="button">R</button>
+                        <button class="special-offer-slider__control_prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
+                        <button class="special-offer-slider__control_next" type="button" aria-label="Кнопка следующего слайда">R</button>
                         <a class="special-offer-slider__link" href="#">Открыть каталог</a>
                     </div>
                 </li>
                 <li class="special-offer__item special-offer__item_discount">
                     <h3 class="special-offer__title">Скидки 50%</h3>
-                    <a class="special-offer__link special-offer__link_discount" href="#">На 350 товаров</a>
+                    <a class="special-offer__link special-offer__link_discount" href="#" aria-label="Ссылка на 350 товаров по скидкам">На 350 товаров</a>
                 </li>
                 <li class="special-offer__item special-offer__item_delivery">
                     <h3 class="special-offer__title">Доставка</h3>
-                    <a class="special-offer__link special-offer__link_delivery" href="#">Бесплатно</a>
+                    <a class="special-offer__link special-offer__link_delivery" href="#" aria-label="Ссылка на подробности о доставке">Бесплатно</a>
                 </li>
             </ul>
         </section>
+
+
         <section class="popular-product">
             <h2 class="popular-product__title">Популярные товары:</h2>
             <a class="popular-product__link popular-all__link" href="#">Все популярные товары</a>
+
             <ul class="popular-product__list">
                 <li class="popular-product__item popular-product-item">
                     <h3 class="popular-product-item__title">Перфоратор BOSCH BFG 9000</h3>
-                    <img class="popular-product-item__img" href="img/Perforator_1.jpg" alt="Изображение товара" width="218" height="170">
+                    <img class="popular-product-item__img" src="img/Perforator_1.jpg" alt="Изображение перфоратора BOSCH BFG 9000" width="218" height="170">
                     <del class="popular-product-item__old-price">32500 Р.</del>
                     <ins class="popular-product-item__new-price">25500 Р.</ins>
                     <div class="popular-product-item__hover popular-product-item-hover">
@@ -115,7 +127,7 @@
                 </li>
                 <li class="popular-product__item popular-product-item">
                     <h3 class="popular-product-item__title">Перфоратор BOSCH BFG 3000</h3>
-                    <img class="popular-product-item__img" href="img/Perforator_2.jpg" alt="Изображение товара" width="218" height="170">
+                    <img class="popular-product-item__img" src="img/Perforator_2.jpg" alt="Изображение перфоратора BOSCH BFG 3000" width="218" height="170">
                     <del class="popular-product-item__old-price">22500 Р.</del>
                     <ins class="popular-product-item__new-price">15500 Р.</ins>
                     <div class="popular-product-item__hover popular-product-item-hover">
@@ -127,7 +139,7 @@
                 </li>
                 <li class="popular-product__item popular-product-item">
                     <h3 class="popular-product-item__title">Перфоратор BOSCH BFG 6000</h3>
-                    <img class="popular-product-item__img" href="img/Perforator_3.jpg" alt="Изображение товара" width="218" height="170">
+                    <img class="popular-product-item__img" src="img/Perforator_3.jpg" alt="Изображение перфоратора BOSCH BFG 6000" width="218" height="170">
                     <del class="popular-product-item__old-price">30500 Р.</del>
                     <ins class="popular-product-item__new-price">25500 Р.</ins>
                     <div class="popular-product-item__hover popular-product-item-hover">
@@ -138,8 +150,9 @@
                     </div>
                 </li>
                 <li class="popular-product__item popular-product-item popular-product-item_new">
+                    <span class="visually-hidden">Новинка</span>
                     <h3 class="popular-product-item__title">Перфоратор BOSCH BFG 2000</h3>
-                    <img class="popular-product-item__img" href="img/Perforator_4.jpg" alt="Изображение товара" width="218" height="170">
+                    <img class="popular-product-item__img" src="img/Perforator_4.jpg" alt="Изображение перфоратора BOSCH BFG 2000" width="218" height="170">
                     <ins class="popular-product-item__new-price">12500 Р.</ins>
                     <div class="popular-product-item__hover popular-product-item-hover">
                         <h3 class="popular-product-item-hover__title">Перфоратор BOSCH BFG 2000</h3>
@@ -150,58 +163,72 @@
                 </li>
             </ul>
         </section>
+
+
         <section class="popular-manufacturer">
             <h2 class="popular-manufacturer__title">Популярные производители:</h2>
             <a class="popular-manufacturer__link popular-all__link" href="#">Все производители</a>
+
             <ul class="popular-manufacturer__list">
                 <li class="popular-manufacturer__item">
                     <a class="popular-manufacturer__link" href="#">
+                        <span class="visually-hidden">Bosch</span>
                         <img class="popular-manufacturer__img" src="img/bosch.png" alt="Логотип производителя" width="126" height="37">
                     </a>
                 </li>
                 <li class="popular-manufacturer__item">
+                    <span class="visually-hidden">Makita</span>
                     <a class="popular-manufacturer__link" href="#">
                         <img class="popular-manufacturer__img" src="img/Makita.png" alt="Логотип производителя" width="123" height="40">
                     </a>
                 </li>
                 <li class="popular-manufacturer__item">
+                    <span class="visually-hidden">DeWalt</span>
                     <a class="popular-manufacturer__link" href="#">
                         <img class="popular-manufacturer__img" src="img/DeWALT.png" alt="Логотип производителя" width="146" height="44">
                     </a>
                 </li>
                 <li class="popular-manufacturer__item">
+                    <span class="visually-hidden">Интерскол</span>
                     <a class="popular-manufacturer__link" href="#">
                         <img class="popular-manufacturer__img" src="img/interscol.png" alt="Логотип производителя" width="200" height="88">
                     </a>
                 </li>
                 <li class="popular-manufacturer__item">
+                    <span class="visually-hidden">Hitachi</span>
                     <a class="popular-manufacturer__link" href="#">
                         <img class="popular-manufacturer__img" src="img/Hitachi.png" alt="Логотип производителя" width="169" height="31">
                     </a>
                 </li>
                 <li class="popular-manufacturer__item">
+                    <span class="visually-hidden">LG</span>
                     <a class="popular-manufacturer__link" href="#">
                         <img class="popular-manufacturer__img" src="img/LG.png" alt="Логотип производителя" width="121" height="73">
                     </a>
                 </li>
                 <li class="popular-manufacturer__item">
+                    <span class="visually-hidden">AEG</span>
                     <a class="popular-manufacturer__link" href="#">
                         <img class="popular-manufacturer__img" src="img/AEG.png" alt="Логотип производителя" width="151" height="96">
                     </a>
                 </li>
                 <li class="popular-manufacturer__item">
+                    <span class="visually-hidden">Metabo</span>
                     <a class="popular-manufacturer__link" href="#">
                         <img class="popular-manufacturer__img" src="img/Metabo.png" alt="Логотип производителя" width="204" height="69">
                     </a>
                 </li>
             </ul>
         </section>
+
+
         <section class="service">
             <h2 class="service__title">Сервисы</h2>
             <p class="service__text">
                 Хороший интернет-магазин отличается от плохого не только ценами!
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
+
             <ul class="service__slider-list">
                 <li class="service__slider-item">
                     <button class="service__slider-btn service__slider-btn_current" type="button">Доставка</button>
@@ -233,6 +260,8 @@
                 </li>
             </ul>
         </section>
+
+
         <section class="about-company">
             <h2 class="about-company__title">Компания «Техномарт»</h2>
             <p class="about-company__text">
@@ -243,6 +272,7 @@
                 Мы можем доставить ваш товар в самые отдаленные точки России!
                 Техномарт работает со многими транспортными компаниями:
             </p>
+
             <ul class="about-company__list">
                 <li class="about-company__item about-company-item">
                     <p class="about-company-item__text">Деловые линии</p>
@@ -255,22 +285,32 @@
                 </li>
             </ul>
         </section>
+
+
         <section class="contacts">
             <h2 class="contacts__title">Контакты</h2>
             <p class="contacts__text">
                 Вы можете забрать товар сами,
                 заехав в наш офис:
             </p>
-            <div class="contacts__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616352156!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1548838816035" width="300" height="158" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <div class="map">
+                <a class="link-to-big-map" href="#" aria-label="Ссылка на карту большого размера"><img src="img/map.png" width="300" height="158" alt="Изображение карты"></a>
+            </div>
+            <div class="big-map-wrapper">
+                <!-- Здесь будет iframe -->
             </div>
             <a class="contacts__write-to-us" href="#">Заблудились? Напишите нам!</a>
         </section>
+
     </main>
 
 
+
     <footer class="main-footer">
-        <a class="main-footer__logo">Техномарт</a>
+
+        <a class="main-footer__logo"><span class="visually-hidden">Логотип компании "Техномарт"</span>Техномарт</a>
+
         <nav class="main-footer__navigation main-footer-navigation">
             <li class="main-footer-navigation__item">
                 <a class="main-footer-navigation__link" href="#">Главная</a>
@@ -294,10 +334,12 @@
                 <a class="main-footer-navigation__link" href="#">Контакты</a>
             </li>
         </nav>
+
         <p class="main-footer__contacts">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <a class="main-footer__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
         </p>
+
         <nav class="main-footer__second-navigation main-footer-second-navigation">
             <ul class="main-footer-second-navigation__list">
                 <li class="main-footer-second-navigation__item">
@@ -314,23 +356,26 @@
                 </li>
             </ul>
         </nav>
+
         <p class="copyright">
             &#169; 2010–2019 Компания «Техномарт»
             Все права защищены
         </p>
+
         <div class="social-links">
             <ul class="social-links__list">
                 <li class="social-links__item">
-                    <a href="#" class="social-links__link social-links__link_vk">Вконтакте</a>
+                    <a href="#" class="social-links__link social-links__link_vk"><span class="visually-hidden">Мы во ВКонтакте</span></a>
                 </li>
                 <li class="social-links__item">
-                    <a href="#" class="social-links__link social-links__link_facebook">Фейсбук</a>
+                    <a href="#" class="social-links__link social-links__link_facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
                 </li>
                 <li class="social-links__item">
-                    <a href="#" class="social-links__link social-links__link_instagram">Инстаграм</a>
+                    <a href="#" class="social-links__link social-links__link_instagram"><span class="visually-hidden">Мы в Инстаграме</span></a>
                 </li>
             </ul>
         </div>
+
         <p class="main-footer__mail main-footer-mail">
             Обратная связь:
             <a class="main-footer-mail__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -339,29 +384,35 @@
             Разработано —
             <a class="main-footer-developed__link" href="https://htmlacademy.ru/" target="_blanc">htmlacademy.ru</a>
         </p>
+
     </footer>
 
 
     <div class="popup">
-        <form class="popup__form popup-form" action="#" method="post">
+
+        <form class="popup__form popup-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="popup-form__user-name popup-form-user-name">
                 <label class="popup-form-user-name__label">
                     Ваше имя:
-                    <input type="text" class="popup-form-user-name__input" placeholder="Имя Фамилия" required>
+                    <input type="text" class="popup-form-user-name__input" name="user-name" placeholder="Имя Фамилия" required>
                 </label>
             </div>
             <div class="popup-form__user-mail popup-form-user-mail">
                 <label class="popup-form-user-mail__label">
                     Ваш e-mail:
-                    <input type="email" class="popup-form-user-mail__input" placeholder="email@example.com" required>
+                    <input type="email" class="popup-form-user-mail__input" name="user-mail" placeholder="email@example.com" required>
                 </label>
             </div>
             <div class="popup-form__msg popup-form-msg">
                 <label class="popup-form-msg__label">Текст письма:</label>
-                <textarea class="popup-form-msg__textarea">В свободной форме</textarea>
+                <textarea class="popup-form-msg__textarea" name="user-message">В свободной форме</textarea>
             </div>
             <input class="popup-form__btn" type="submit" value="Отправить">
+            <button class="popup__form_close-btn" aria-label="Кнопка закрыть">X</button>
         </form>
+
     </div>
+
+
 </body>
 </html>
