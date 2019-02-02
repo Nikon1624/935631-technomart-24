@@ -15,11 +15,7 @@
         <a class="main-header__cart" href="#">Корзина: 10</a>
         <a class="main-header__place-order" href="#">Оформить заказ</a>
 
-        <h1 class="main-header__page-title">
-            Интернет-магазин
-            строительных материалов
-            и инструментов для ремонта
-        </h1>
+        <h1 class="main-header__page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <p class="main-header__contacts">
             <a class="main-header__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -91,13 +87,14 @@
         <section class="filters">
             <h2 class="filters__title">Фильтр:</h2>
 
-            <form class="filters__form filters-form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="filters__form filters-form" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="filters-form__price price-fieldset">
                     <legend class="price-fieldset__title">Цена:</legend>
-                    <input class="price-fieldset__range" id="price-range" type="range" min="0" max="30000">
-                    <output class="price-fieldset__output price-fieldset__output_min" name="min-value" for="price-range">0</output>
-                    <span>-</span>
-                    <output class="price-fieldset__output price-fieldset__output_max" name="max-value" for="price-range">30000</output>
+                    <input class="price-fieldset__range" type="range" min="0" max="30000">
+                    <p class="price-fieldset__range-info">
+                        <span class="price-fieldset__output price-fieldset__output_min">0</span>-
+                        <span class="price-fieldset__output price-fieldset__output_max">30000</span>
+                    </p>
                 </fieldset>
 
                 <fieldset class="filters-form__manufacturer manufacturer-fieldset">
@@ -143,7 +140,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <input class="filters-form__submit" type="submit" value="Показать">
+                <button class="filters-form__submit">Показать</button>
             </form>
         </section>
 
@@ -153,13 +150,13 @@
 
             <ul class="sort__list">
                 <li class="sort__item">
-                    <a class="sort__link sort__link_current" href="#">По цене</a>
+                    <button class="sort__btn sort-btn__price" type="button">По цене</a>
                 </li>
                 <li class="sort__item">
-                    <a class="sort__link" href="#">По типу</a>
+                    <button class="sort__btn sort-btn__type" type="button">По типу</a>
                 </li>
                 <li class="sort__item">
-                    <a class="sort__link" href="#">По функционалу</a>
+                    <button class="sort__btn sort-btn__function" type="button">По функционалу</a>
                 </li>
             </ul>
             <button class="sort__button-up" type="button"><span class="visually-hidden">Сортировка по убыванию</span></button>
@@ -277,10 +274,10 @@
             </ul>
             <nav class="pagination">
                 <ul class="pagination__list">
-                    <li class="pagination__item--current" aria-label="Текущая страница"><a href="#">1</a></li>
-                    <li class="pagination__item" aria-label="Страница 2"><a href="#">2</a></li>
-                    <li class="pagination__item" aria-label="Страница 3"><a href="#">3</a></li>
-                    <li class="pagination__item" aria-label="Следующая страница"><a href="#">Следущая</a></li>
+                    <li class="pagination__item--current"><a href="#" aria-label="Текущая страница">1</a></li>
+                    <li class="pagination__item"><a href="#" aria-label="Страница 2">2</a></li>
+                    <li class="pagination__item"><a href="#" aria-label="Страница 3">3</a></li>
+                    <li class="pagination__item"><a href="#" aria-label="Следующая страница">Следущая</a></li>
                 </ul>
             </nav>
         </section>
@@ -288,10 +285,7 @@
 
         <section class="about-product">
             <h2 class="about-product__title">Пара слов о перфораторах</h2>
-            <p class="about-product__text">
-                Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель
-            </p>
+            <p class="about-product__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и  камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель</p>
         </section>
     </main>
 
@@ -346,15 +340,12 @@
             </ul>
         </nav>
 
-        <p class="copyright">
-            &#169; 2010–2019 Компания «Техномарт»
-            Все права защищены
-        </p>
+        <p class="copyright">&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
 
         <div class="social-links">
             <ul class="social-links__list">
                 <li class="social-links__item">
-                    <a href="#" class="social-links__link social-links__link_vk"><span class="visually-hidden">Мы во ВКонтакте</span></a>
+                    <a href="#" class="social-links__link social-links__link_vk"><span class="visually-hidden">Мы в ВКонтакте</span></a>
                 </li>
                 <li class="social-links__item">
                     <a href="#" class="social-links__link social-links__link_facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
