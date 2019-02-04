@@ -11,6 +11,7 @@
         <a class="main-header__logo" href="#"><span class="visually-hidden">Логотип компании "Техномарт"</span>Техномарт</a>
         <form class="search-form" action="#" method="get">
             <input class="search-form__input" type="search" name="seach-field" placeholder="Поиск:" aria-label="Поиск по сайту">
+            <button class="visually-hidden" aria-label="Получить результаты поиска"></button>
         </form>
         <a class="main-header__bookmarks" href="#">Закладки: 0</a>
         <a class="main-header__cart" href="#">Корзина: 0</a>
@@ -23,8 +24,9 @@
         </p>
         <ul class="user-navigation">
             <li class="user-navigation__item"><a class="user-navigation__login-link" href="#">Войти</a></li>
+            <li class="user-navigation__item"><a class="main-header__registration-link" href="#">Регистрация</a></li>
         </ul>
-        <a class="main-header__registration-link" href="#">Регистрация</a>
+
 
         <nav class="main-navigation">
             <ul class="main-navigation__list">
@@ -63,42 +65,44 @@
             <h2 class="visually-hidden">Специальные предложения</h2>
 
             <ul class="special-offer__list">
-                <li class="special-offer__item special-offer__item_material special-offer__item_new">
+                <li class="special-offer__item special-offer__item--materials special-offer__item--new">
                     <h3 class="special-offer__title">Материалы</h3>
-                    <a class="special-offer__link special-offer__link_material" href="#" aria-label="Ссылка на все материалы">На любой вкус</a>
+                    <a class="special-offer__link special-offer__link--materials" href="#" aria-label="Ссылка на все материалы">На любой вкус</a>
                     <span class="visually-hidden">Новинка</span>
+                    <span class="special-offer__new-element new-element"></span>
                 </li>
-                <li class="special-offer__item special-offer__item_tool">
+                <li class="special-offer__item special-offer__item--tools">
                     <h3 class="special-offer__title">Инструмент</h3>
-                    <a class="special-offer__link special-offer__link_tool" href="#" aria-label="Ссылка на все инструменты">На все случаи</a>
+                    <a class="special-offer__link special-offer__link--tools" href="#" aria-label="Ссылка на все инструменты">На все случаи</a>
                 </li>
-                <li class="special-offer__item special-offer__item_technique">
+                <li class="special-offer__item special-offer__items--technique">
                     <h3 class="special-offer__title">Техника</h3>
-                    <a class="special-offer__link special-offer__link_technique" href="#" aria-label="Ссылка на всю технику">Для стройки</a>
+                    <a class="special-offer__link special-offer__link--technique" href="#" aria-label="Ссылка на всю технику">Для стройки</a>
                 </li>
-                <li class="special-offer__slider special-offer-slider">
-                    <div class="special-offer-slider__first-slide">
-                        <h3 class="special-offer-slider__title">Перфораторы</h3>
-                        <p class="special-offer-slider__text">Настоящие мужские игрушки</p>
-                        <button class="special-offer-slider__control_prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
-                        <button class="special-offer-slider__control_next" type="button" aria-label="Кнопка следующего слайда">R</button>
-                        <a class="special-offer-slider__link" href="#">Открыть каталог</a>
-                    </div>
-                    <div class="special-offer-slider__second-slide">
-                        <h3 class="special-offer-slider__title">Дрели</h3>
-                        <p class="special-offer-slider__text">Соседям на радость!</p>
-                        <button class="special-offer-slider__control_prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
-                        <button class="special-offer-slider__control_next" type="button" aria-label="Кнопка следующего слайда">R</button>
-                        <a class="special-offer-slider__link" href="#">Открыть каталог</a>
-                    </div>
-                </li>
-                <li class="special-offer__item special-offer__item_discount">
+                <li class="special-offer__item special-offer__item--discount">
                     <h3 class="special-offer__title">Скидки 50%</h3>
-                    <a class="special-offer__link special-offer__link_discount" href="#" aria-label="Ссылка на 350 товаров по скидкам">На 350 товаров</a>
+                    <a class="special-offer__link special-offer__link--discount" href="#" aria-label="Ссылка на 350 товаров по скидкам">На 350 товаров</a>
                 </li>
-                <li class="special-offer__item special-offer__item_delivery">
+                <li class="special-offer__item special-offer__item--delivery">
                     <h3 class="special-offer__title">Доставка</h3>
-                    <a class="special-offer__link special-offer__link_delivery" href="#" aria-label="Ссылка на подробности о доставке">Бесплатно</a>
+                    <a class="special-offer__link special-offer__link--delivery" href="#" aria-label="Ссылка на подробности о доставке">Бесплатно</a>
+                </li>
+            </ul>
+
+            <ul class="special-offer__slider special-offer-slider">
+                <li class="special-offer-slider__first-slide">
+                    <h3 class="special-offer-slider__title">Перфораторы</h3>
+                    <p class="special-offer-slider__text">Настоящие мужские игрушки</p>
+                    <button class="special-offer-slider__control--prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
+                    <button class="special-offer-slider__control--next" type="button" aria-label="Кнопка следующего слайда">R</button>
+                    <a class="special-offer-slider__link" href="#">Открыть каталог</a>
+                </li>
+                <li class="special-offer-slider__second-slide">
+                    <h3 class="special-offer-slider__title">Дрели</h3>
+                    <p class="special-offer-slider__text">Соседям на радость!</p>
+                    <button class="special-offer-slider__control--prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
+                    <button class="special-offer-slider__control--next" type="button" aria-label="Кнопка следующего слайда">R</button>
+                    <a class="special-offer-slider__link" href="#">Открыть каталог</a>
                 </li>
             </ul>
         </section>
@@ -116,8 +120,8 @@
                     <ins class="popular-product-item__new-price">25500 Р.</ins>
                     <div class="popular-product-item__hover popular-product-item-hover">
                         <h3 class="popular-product-item-hover__title">Перфоратор BOSCH BFG 9000</h3>
-                        <button class="popular-product-item-hover__btn_buy" type="button">Купить</button>
-                        <button class="popular-product-item-hover__btn_to-the-bookmarks" type="button">В закладки</button>
+                        <button class="popular-product-item-hover__btn--buy" type="button">Купить</button>
+                        <button class="popular-product-item-hover__btn--to-the-bookmarks" type="button">В закладки</button>
                         <ins class="popular-product-item__new-price">25500 Р.</ins>
                     </div>
                 </li>
@@ -128,8 +132,8 @@
                     <ins class="popular-product-item__new-price">15500 Р.</ins>
                     <div class="popular-product-item__hover popular-product-item-hover">
                         <h3 class="popular-product-item-hover__title">Перфоратор BOSCH BFG 3000</h3>
-                        <button class="popular-product-item-hover__btn_buy" type="button">Купить</button>
-                        <button class="popular-product-item-hover__btn_to-the-bookmarks" type="button">В закладки</button>
+                        <button class="popular-product-item-hover__btn--buy" type="button">Купить</button>
+                        <button class="popular-product-item-hover__btn--to-the-bookmarks" type="button">В закладки</button>
                         <ins class="popular-product-item__new-price">15500 Р.</ins>
                     </div>
                 </li>
@@ -140,20 +144,21 @@
                     <ins class="popular-product-item__new-price">25500 Р.</ins>
                     <div class="popular-product-item__hover popular-product-item-hover">
                         <h3 class="popular-product-item-hover__title">Перфоратор BOSCH BFG 6000</h3>
-                        <button class="popular-product-item-hover__btn_buy" type="button">Купить</button>
-                        <button class="popular-product-item-hover__btn_to-the-bookmarks" type="button">В закладки</button>
+                        <button class="popular-product-item-hover__btn--buy" type="button">Купить</button>
+                        <button class="popular-product-item-hover__btn--to-the-bookmarks" type="button">В закладки</button>
                         <ins class="popular-product-item__new-price">25500 Р.</ins>
                     </div>
                 </li>
                 <li class="popular-product__item popular-product-item popular-product-item_new">
                     <span class="visually-hidden">Новинка</span>
+                    <span class="popular-product__new-element new-element"></span>
                     <h3 class="popular-product-item__title">Перфоратор BOSCH BFG 2000</h3>
                     <img class="popular-product-item__img" src="img/Perforator_4.jpg" alt="Изображение перфоратора BOSCH BFG 2000" width="218" height="170">
                     <ins class="popular-product-item__new-price">12500 Р.</ins>
                     <div class="popular-product-item__hover popular-product-item-hover">
                         <h3 class="popular-product-item-hover__title">Перфоратор BOSCH BFG 2000</h3>
-                        <button class="popular-product-item-hover__btn_buy" type="button">Купить</button>
-                        <button class="popular-product-item-hover__btn_to-the-bookmarks" type="button">В закладки</button>
+                        <button class="popular-product-item-hover__btn--buy" type="button">Купить</button>
+                        <button class="popular-product-item-hover__btn--to-the-bookmarks" type="button">В закладки</button>
                         <ins class="popular-product-item__new-price">12500 Р.</ins>
                     </div>
                 </li>
@@ -216,7 +221,7 @@
 
             <ul class="service__slider-list">
                 <li class="service__slider-item">
-                    <button class="service__slider-btn service__slider-btn_current" type="button">Доставка</button>
+                    <button class="service__slider-btn service__slider-btn--current" type="button">Доставка</button>
                     <h3 class="service__slider-title">Доставка</h3>
                     <p class="service__slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
                 </li>
@@ -373,7 +378,7 @@
                 </label>
             </div>
             <button class="popup-form__submit-btn">Отправить</button>
-            <button class="popup__form_close-btn" aria-label="Кнопка закрыть">X</button>
+            <button class="popup-form__close-btn" aria-label="Кнопка закрыть">X</button>
         </form>
 
     </div>
