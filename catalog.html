@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <title>Каталог товаров. Интернет-магазин "Техномарт"</title>
 </head>
 <body>
 
     <header class="main-header">
-        <a class="main-header__logo" href="index.html"><span class="visually-hidden">Логотип компании "Техномарт"</span>Техномарт</a>
+        <a class="main-header__logo" href="index.html"><img class="logo" src="img/logo.jpg" alt="Логотип магазина" width="220" height="42"></a>
         <form class="search-form" action="#" method="get">
             <input class="search-form__input" type="search" name="seach-field" placeholder="Поиск:" aria-label="Поиск по сайту">
+            <button class="visually-hidden" aria-label="Получить результаты поиска"></button>
         </form>
         <a class="main-header__bookmarks" href="#">Закладки: 0</a>
         <a class="main-header__cart" href="#">Корзина: 10</a>
@@ -150,19 +154,19 @@
 
             <ul class="sort__list">
                 <li class="sort__item">
-                    <button class="sort__btn sort-btn__price" type="button">По цене</a>
+                    <a class="sort__btn sort-btn__price" href="#">По цене</a>
                 </li>
                 <li class="sort__item">
-                    <button class="sort__btn sort-btn__type" type="button">По типу</a>
+                    <a class="sort__btn sort-btn__type" href="#">По типу</a>
                 </li>
                 <li class="sort__item">
-                    <button class="sort__btn sort-btn__function" type="button">По функционалу</a>
+                    <a class="sort__btn sort-btn__function" href="#">По функционалу</a>
                 </li>
                 <li class="sort-item">
-                    <button class="sort__button-up" type="button"><span class="visually-hidden">Сортировка по убыванию</span></button>
+                    <a class="sort__button-up" href="#"><span class="visually-hidden">Сортировка по убыванию</span></a>
                 </li>
                 <li class="sort-item">
-                    <button class="sort__button-down" type="button"><span class="visually-hidden">Сортировка по возрастанию</span></button>
+                    <a class="sort__button-down" href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a>
                 </li>
             </ul>
         </section>
@@ -369,5 +373,17 @@
             <a class="main-footer-developed__link" href="https://htmlacademy.ru/" target="_blanc">htmlacademy.ru</a>
         </p>
     </footer>
+
+    <div class="popup">
+        <b class="popup__info">Товар добавлен в корзину!</b>
+        <ul class="popup__list">
+            <li class="popup__item">
+                <a class="popup__link" href="#">Оформить заказ</a>
+            </li>
+            <li class="popup__item">
+                <button class="popup__button" type="button">Продолжить покупки</button>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
