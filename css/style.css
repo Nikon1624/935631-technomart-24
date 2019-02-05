@@ -846,37 +846,20 @@ a {
     border-bottom: 1px dotted #ee3643;
 }
 
-.sort__button-up, .sort__button-down {
-    position: relative;
+.sort__button-up {
     display: inline-block;
-    width: 15px;
-    height: 25px;
-}
-
-.sort__button-up::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    border: 10px solid #ee3643;
-    border-top-color: transparent;
+    border: 10px solid transparent;
+    border-bottom-color: #ee3643;
     border-right-width: 5px;
     border-left-width: 5px;
-    border-right-color: transparent;
-    border-left-color: transparent;
 }
 
-.sort__button-down::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    border: 10px solid #c5c5c5;
-    border-bottom-color: transparent;
+.sort__button-down {
+    display: inline-block;
+    border: 10px solid transparent;
+    border-top-color: #c5c5c5;
     border-right-width: 5px;
     border-left-width: 5px;
-    border-right-color: transparent;
-    border-left-color: transparent;
 }
 
 .sort__btn--current {
