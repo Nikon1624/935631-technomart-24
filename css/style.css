@@ -9,6 +9,14 @@ a {
     text-decoration: none;
 }
 
+.sort-item .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .header-top {
     background-color: #293449;
 }
@@ -836,6 +844,39 @@ a {
     text-transform: uppercase;
     color: #c4c1bb;
     border-bottom: 1px dotted #ee3643;
+}
+
+.sort__button-up, .sort__button-down {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 25px;
+}
+
+.sort__button-up::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 10px solid #ee3643;
+    border-top-color: transparent;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.sort__button-down::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 10px solid #c5c5c5;
+    border-bottom-color: transparent;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    border-right-color: transparent;
+    border-left-color: transparent;
 }
 
 .sort__btn--current {
