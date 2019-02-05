@@ -7,63 +7,64 @@
     <meta charset="UTF-8">
     <title>Каталог товаров. Интернет-магазин "Техномарт"</title>
 </head>
-<body>
+<body class="catalog-page">
 
     <header class="main-header">
-        <a class="main-header__logo" href="index.html"><img class="logo" src="img/logo.jpg" alt="Логотип магазина" width="220" height="42"></a>
-        <form class="search-form" action="#" method="get">
-            <input class="search-form__input" type="search" name="seach-field" placeholder="Поиск:" aria-label="Поиск по сайту">
-            <button class="visually-hidden" aria-label="Получить результаты поиска"></button>
-        </form>
-        <a class="main-header__bookmarks" href="#">Закладки: 0</a>
-        <a class="main-header__cart" href="#">Корзина: 10</a>
-        <a class="main-header__place-order" href="#">Оформить заказ</a>
-
-        <h1 class="main-header__page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <p class="main-header__contacts">
-            <a class="main-header__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
-        <ul class="user-navigation">
-            <li class="user-navigation__item">
-                <a class="user-navigation__profile" href="#">Равшан Джамшутович</a>
-            </li>
-            <li class="user-navigation__item">
-                <button type="button" class="user-navigation__logout">Выйти</button>
-            </li>
-            <li class="user-navigation__item">
-                <a class="user-navigation__orders" href="#">Мои заказы</a>
-            </li>
-            <li class="user-navigation__item">
-                <a class="user-navigation__personal-account" href="#">Личный кабинет</a>
-            </li>
-        </ul>
-
-        <nav class="main-navigation">
-            <ul class="main-navigation__list">
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="index.html">Главная</a>
+        <div class="header-top">
+            <a class="main-header__logo" href="index.html"><img class="logo" src="img/logo.jpg" alt="Логотип магазина" width="220" height="42"></a>
+            <form class="search-form" action="#" method="get">
+                <input class="search-form__input" type="search" name="seach-field" placeholder="Поиск:" aria-label="Поиск по сайту">
+                <button class="visually-hidden" aria-label="Получить результаты поиска"></button>
+            </form>
+            <a class="main-header__bookmarks" href="#">Закладки: 0</a>
+            <a class="main-header__cart" href="#">Корзина: 10</a>
+            <a class="main-header__place-order" href="#">Оформить заказ</a>
+        </div>
+        <div class="header-bottom">
+            <h1 class="main-header__page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+            <p class="main-header__contacts">
+                <a class="main-header__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+            <ul class="user-navigation">
+                <li class="user-navigation__item user-navigation__item--profile-wrap">
+                    <a class="user-navigation__profile" href="#">Равшан Джамшутович</a>
+                    <button type="button" class="user-navigation__logout">Выйти</button>
                 </li>
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="#">Компания</a>
+                <li class="user-navigation__item">
+                    <a class="user-navigation__orders" href="#">Мои заказы</a>
                 </li>
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="catalog.html">Кaталог</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="#">Новости</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="#">Спецпредложения</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="#">Доставка</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a class="main-navigation__link" href="#">Контакты</a>
+                <li class="user-navigation__item">
+                    <a class="user-navigation__personal-account" href="#">Личный кабинет</a>
                 </li>
             </ul>
-        </nav>
+
+            <nav class="main-navigation">
+                <ul class="main-navigation__list">
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Компания</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="catalog.html">Кaталог</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Новости</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Спецпредложения</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Доставка</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a class="main-navigation__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
@@ -94,10 +95,12 @@
             <form class="filters__form filters-form" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="filters-form__price price-fieldset">
                     <legend class="price-fieldset__title">Цена:</legend>
-                    <input class="price-fieldset__range" type="range" min="0" max="30000">
+                    <div class="range-wrap">
+                        <input class="price-fieldset__range" type="range" min="0" max="30000">
+                    </div>
                     <p class="price-fieldset__range-info">
-                        <span class="price-fieldset__output price-fieldset__output--min">0</span>-
-                        <span class="price-fieldset__output price-fieldset__output--max">30000</span>
+                        <input class="price-fieldset__output price-fieldset__output--min" type="text" name="min-price" placeholder="0"> -
+                        <input class="price-fieldset__output price-fieldset__output--max" type="text" name="max-price" placeholder="30000">
                     </p>
                 </fieldset>
 
@@ -154,7 +157,7 @@
 
             <ul class="sort__list">
                 <li class="sort__item">
-                    <a class="sort__btn sort-btn__price" href="#">По цене</a>
+                    <a class="sort__btn sort__btn--current sort-btn__price" href="#">По цене</a>
                 </li>
                 <li class="sort__item">
                     <a class="sort__btn sort-btn__type" href="#">По типу</a>
@@ -282,10 +285,10 @@
             </ul>
             <nav class="pagination">
                 <ul class="pagination__list">
-                    <li class="pagination__item--current"><a href="#" aria-label="Текущая страница">1</a></li>
-                    <li class="pagination__item"><a href="#" aria-label="Страница 2">2</a></li>
-                    <li class="pagination__item"><a href="#" aria-label="Страница 3">3</a></li>
-                    <li class="pagination__item"><a href="#" aria-label="Следующая страница">Следущая</a></li>
+                    <li class="pagination__item--current"><a class="pagination__link pagination__link--current" href="#" aria-label="Текущая страница">1</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" aria-label="Страница 2">2</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" aria-label="Страница 3">3</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" aria-label="Следующая страница">Следущая</a></li>
                 </ul>
             </nav>
         </section>
@@ -300,78 +303,83 @@
 
 
     <footer class="main-footer">
-        <a class="main-footer__logo"><span class="visually-hidden">Логотип компании "Техномарт"</span>Техномарт</a>
+        <div class="footer-top">
+            <a class="main-footer__logo"><img class="footer-logo" src="img/footer-logo.jpg" alt="Логотип магазина" width="220" height="68"></a>
 
-        <nav class="main-footer__navigation main-footer-navigation">
-            <li class="main-footer-navigation__item">
-                <a class="main-footer-navigation__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-footer-navigation__item">
-                <a class="main-footer-navigation__link" href="#">Компания</a>
-            </li>
-            <li class="main-footer-navigation__item">
-                <a class="main-footer-navigation__link" href="catalog.html">Кaталог</a>
-            </li>
-            <li class="main-footer-navigation__item">
-                <a class="main-footer-navigation__link" href="#">Новости</a>
-            </li>
-            <li class="main-footer-navigation__item">
-                <a class="main-footer-navigation__link" href="#">Спецпредложения</a>
-            </li>
-            <li class="main-footer-navigation__item">
-                <a class="main-footer-navigation__link" href="#">Доставка</a>
-            </li>
-            <li class="main-footer-navigation__item">
-                <a class="main-footer-navigation__link" href="#">Контакты</a>
-            </li>
-        </nav>
+            <nav class="main-footer__navigation main-footer-navigation">
+                <ul class="main-footer-navigation__list">
+                    <li class="main-footer-navigation__item">
+                        <a class="main-footer-navigation__link" href="#">Главная</a>
+                    </li>
+                    <li class="main-footer-navigation__item">
+                        <a class="main-footer-navigation__link" href="#">Компания</a>
+                    </li>
+                    <li class="main-footer-navigation__item">
+                        <a class="main-footer-navigation__link" href="catalog.html">Кaталог</a>
+                    </li>
+                    <li class="main-footer-navigation__item">
+                        <a class="main-footer-navigation__link" href="#">Новости</a>
+                    </li>
+                    <li class="main-footer-navigation__item">
+                        <a class="main-footer-navigation__link" href="#">Спецпредложения</a>
+                    </li>
+                    <li class="main-footer-navigation__item">
+                        <a class="main-footer-navigation__link" href="#">Доставка</a>
+                    </li>
+                    <li class="main-footer-navigation__item">
+                        <a class="main-footer-navigation__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <p class="main-footer__contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <a class="main-footer__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
-        </p>
+            <p class="main-footer__contacts">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                <a class="main-footer__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
+            </p>
 
-        <nav class="main-footer__second-navigation main-footer-second-navigation">
-            <ul class="main-footer-second-navigation__list">
-                <li class="main-footer-second-navigation__item">
-                    <a class="main-footer-second-navigation__link" href="#">Материалы</a>
-                </li>
-                <li class="main-footer-second-navigation__item">
-                    <a class="main-footer-second-navigation__link" href="#">Техника</a>
-                </li>
-                <li class="main-footer-second-navigation__item">
-                    <a class="main-footer-second-navigation__link" href="#">Инструмент</a>
-                </li>
-                <li class="main-footer-second-navigation__item">
-                    <a class="main-footer-second-navigation__link" href="#">Спецпредложения</a>
-                </li>
-            </ul>
-        </nav>
-
-        <p class="copyright">&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
-
-        <div class="social-links">
-            <ul class="social-links__list">
-                <li class="social-links__item">
-                    <a href="#" class="social-links__link social-links__link--vk"><span class="visually-hidden">Мы в ВКонтакте</span></a>
-                </li>
-                <li class="social-links__item">
-                    <a href="#" class="social-links__link social-links__link--facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-                </li>
-                <li class="social-links__item">
-                    <a href="#" class="social-links__link social-links__link--instagram"><span class="visually-hidden">Мы в Инстаграме</span></a>
-                </li>
-            </ul>
+            <nav class="main-footer__second-navigation main-footer-second-navigation">
+                <ul class="main-footer-second-navigation__list">
+                    <li class="main-footer-second-navigation__item">
+                        <a class="main-footer-second-navigation__link" href="#">Материалы</a>
+                    </li>
+                    <li class="main-footer-second-navigation__item">
+                        <a class="main-footer-second-navigation__link" href="#">Техника</a>
+                    </li>
+                    <li class="main-footer-second-navigation__item">
+                        <a class="main-footer-second-navigation__link" href="#">Инструмент</a>
+                    </li>
+                    <li class="main-footer-second-navigation__item">
+                        <a class="main-footer-second-navigation__link" href="#">Спецпредложения</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+        <div class="footer-bottom">
+            <p class="copyright">&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
 
-        <p class="main-footer__mail main-footer-mail">
-            Обратная связь:
-            <a class="main-footer-mail__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="main-footer__developed main-footer-developed">
-            Разработано —
-            <a class="main-footer-developed__link" href="https://htmlacademy.ru/" target="_blanc">htmlacademy.ru</a>
-        </p>
+            <div class="social-links">
+                <ul class="social-links__list">
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link social-links__link_vk"><span class="visually-hidden">Мы в ВКонтакте</span></a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link social-links__link_facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link social-links__link_instagram"><span class="visually-hidden">Мы в Инстаграме</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="main-footer__mail main-footer-mail">
+                Обратная связь:
+                <a class="main-footer-mail__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="main-footer__developed main-footer-developed">
+                Разработано —
+                <a class="main-footer-developed__link" href="https://htmlacademy.ru/" target="_blanc">htmlacademy.ru</a>
+            </p>
+        </div>
     </footer>
 
     <div class="popup">
