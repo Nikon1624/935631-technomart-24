@@ -606,28 +606,34 @@ a {
     border: 2px solid #dee3e4;
 }
 
-.popup-form-user-name__input::-webkit-input-placeholder, .popup-form-user-mail__input::-webkit-input-placeholder, .popup-form-msg__textarea {
+.popup-form-user-name__input::-webkit-input-placeholder, .popup-form-user-mail__input::-webkit-input-placeholder, .popup-form-msg__textarea::-webkit-input-placeholder {
     font-size: 13px;
     line-height: 18px;
     color: #a9a9a9;
 }
 
-.popup-form-user-name__input:-ms-input-placeholder, .popup-form-user-mail__input:-ms-input-placeholder, .popup-form-msg__textarea {
+.popup-form-user-name__input:-ms-input-placeholder, .popup-form-user-mail__input:-ms-input-placeholder, .popup-form-msg__textarea:-ms-input-placeholder {
     font-size: 13px;
     line-height: 18px;
     color: #a9a9a9;
 }
 
-.popup-form-user-name__input::-ms-input-placeholder, .popup-form-user-mail__input::-ms-input-placeholder, .popup-form-msg__textarea {
+.popup-form-user-name__input::-ms-input-placeholder, .popup-form-user-mail__input::-ms-input-placeholder, .popup-form-msg__textarea::-ms-input-placeholder {
     font-size: 13px;
     line-height: 18px;
     color: #a9a9a9;
 }
 
-.popup-form-user-name__input::placeholder, .popup-form-user-mail__input::placeholder, .popup-form-msg__textarea {
+.popup-form-user-name__input::placeholder, .popup-form-user-mail__input::placeholder, .popup-form-msg__textarea::placeholder {
     font-size: 13px;
     line-height: 18px;
     color: #a9a9a9;
+}
+
+.popup-form-msg__textarea {
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
 }
 
 .popup__submit-wrap {
