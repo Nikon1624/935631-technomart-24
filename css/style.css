@@ -53,6 +53,18 @@ a {
     outline: none;
 }
 
+.search-form__input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.search-form__input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.search-form__input::-ms-input-placeholder {
+    color: #ffffff;
+}
+
 .search-form__input::placeholder {
     color: #ffffff;
 }
@@ -327,7 +339,8 @@ a {
 .popular-product__item:hover .popular-product-item__hover, .products__item:hover .products__hover {
     display: block;
     background-color: #ffffff;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, .2);
+            box-shadow: 0 0 20px 10px rgba(0, 0, 0, .2);
 }
 
 .popular-product-item__title, .products__title, .popular-product-item-hover__title, .products-hover__title {
@@ -397,12 +410,14 @@ a {
 
 .popular-manufacturer__item:hover {
     border: none;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
 }
 
 .popular-manufacturer__item:active {
     border: none;
-    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 0 8px 3px rgba(0, 0, 0, .2);
+            box-shadow: 0 0 8px 3px rgba(0, 0, 0, .2);
     opacity: .5;
 }
 
@@ -591,6 +606,24 @@ a {
     border: 2px solid #dee3e4;
 }
 
+.popup-form-user-name__input::-webkit-input-placeholder, .popup-form-user-mail__input::-webkit-input-placeholder, .popup-form-msg__textarea {
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.popup-form-user-name__input:-ms-input-placeholder, .popup-form-user-mail__input:-ms-input-placeholder, .popup-form-msg__textarea {
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
+.popup-form-user-name__input::-ms-input-placeholder, .popup-form-user-mail__input::-ms-input-placeholder, .popup-form-msg__textarea {
+    font-size: 13px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+
 .popup-form-user-name__input::placeholder, .popup-form-user-mail__input::placeholder, .popup-form-msg__textarea {
     font-size: 13px;
     line-height: 18px;
@@ -722,6 +755,24 @@ a {
 .price-fieldset__output {
     border: none;
     background-color: #f7f3ec;
+}
+
+.price-fieldset__output::-webkit-input-placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.price-fieldset__output:-ms-input-placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.price-fieldset__output::-ms-input-placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
 }
 
 .price-fieldset__output::placeholder {
