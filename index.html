@@ -11,58 +11,66 @@
     <header class="main-header">
 
         <div class="header-top">
-            <a class="main-header__logo" href="#"><img class="logo" src="img/logo.jpg" alt="Логотип магазина" width="220" height="42"></a>
-            <form class="search-form" action="#" method="get">
-                <input class="search-form__input" type="search" name="seach-field" placeholder="Поиск:" aria-label="Поиск по сайту">
-                <button class="visually-hidden" aria-label="Получить результаты поиска"></button>
-            </form>
-            <a class="main-header__bookmarks" href="#">Закладки: 0</a>
-            <a class="main-header__cart" href="#">Корзина: 0</a>
-            <a class="main-header__place-order" href="#">Оформить заказ</a>
+            <div class="container">
+                <div class="header-top__flex-wrapper">
+                    <a class="main-header__logo" href="#"><img class="logo" src="img/logo.jpg" alt="Логотип магазина" width="220" height="42"></a>
+                    <form class="search-form" action="#" method="get">
+                        <input class="search-form__input" type="search" name="seach-field" placeholder="Поиск:" aria-label="Поиск по сайту">
+                        <button class="visually-hidden" aria-label="Получить результаты поиска"></button>
+                    </form>
+                    <a class="main-header__bookmarks" href="#">Закладки: 0</a>
+                    <a class="main-header__cart" href="#">Корзина: 0</a>
+                    <a class="main-header__place-order" href="#">Оформить заказ</a>
+                </div>
+            </div>
         </div>
 
         <div class="header-bottom">
-            <h1 class="main-header__page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-            <p class="main-header__contacts">
-                <a class="main-header__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
-                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            </p>
-            <ul class="user-navigation">
-                <li class="user-navigation__item"><a class="user-navigation__login-link" href="#">Войти</a></li>
-                <li class="user-navigation__item"><a class="main-header__registration-link" href="#">Регистрация</a></li>
-            </ul>
-            <nav class="main-navigation">
-                <ul class="main-navigation__list">
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="#">Главная</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="#">Компания</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="catalog.html">Кaталог</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="#">Новости</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="#">Спецпредложения</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="#">Доставка</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="container">
+                <div class="header-bottom__flex-wrapper">
+                    <h1 class="main-header__page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+                    <p class="main-header__contacts">
+                        <a class="main-header__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
+                        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                    </p>
+                    <ul class="user-navigation">
+                        <li class="user-navigation__item"><a class="user-navigation__login-link" href="#">Войти</a></li>
+                        <li class="user-navigation__item"><a class="main-header__registration-link" href="#">Регистрация</a></li>
+                    </ul>
+                </div>
+                <nav class="main-navigation">
+                    <ul class="main-navigation__list">
+                        <li class="main-navigation__item">
+                            <a class="main-navigation__link" href="#">Главная</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a class="main-navigation__link" href="#">Компания</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a class="main-navigation__link" href="catalog.html">Кaталог</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a class="main-navigation__link" href="#">Новости</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a class="main-navigation__link" href="#">Спецпредложения</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a class="main-navigation__link" href="#">Доставка</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a class="main-navigation__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
 
 
 
-    <main>
+    <main class="container">
 
         <section class="special-offer">
             <h2 class="visually-hidden">Специальные предложения</h2>
@@ -82,32 +90,36 @@
                     <h3 class="special-offer__title">Техника</h3>
                     <a class="special-offer__link special-offer__link--technique" href="#" aria-label="Ссылка на всю технику">Для стройки</a>
                 </li>
-                <li class="special-offer__item special-offer__item--discount">
-                    <h3 class="special-offer__title">Скидки 50%</h3>
-                    <a class="special-offer__link special-offer__link--discount" href="#" aria-label="Ссылка на 350 товаров по скидкам">На 350 товаров</a>
-                </li>
-                <li class="special-offer__item special-offer__item--delivery">
-                    <h3 class="special-offer__title">Доставка</h3>
-                    <a class="special-offer__link special-offer__link--delivery" href="#" aria-label="Ссылка на подробности о доставке">Бесплатно</a>
-                </li>
             </ul>
+            <div class="special-offer-bottom-wrapper">
+                <ul class="special-offer__slider special-offer-slider">
+                    <li class="special-offer-slider__first-slide">
+                        <h3 class="special-offer-slider__title">Перфораторы</h3>
+                        <p class="special-offer-slider__text">Настоящие мужские игрушки</p>
+                        <button class="special-offer-slider__control--prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
+                        <button class="special-offer-slider__control--next" type="button" aria-label="Кнопка следующего слайда">R</button>
+                        <a class="special-offer-slider__link" href="#">Открыть каталог</a>
+                    </li>
+                    <li class="special-offer-slider__second-slide">
+                        <h3 class="special-offer-slider__title">Дрели</h3>
+                        <p class="special-offer-slider__text">Соседям на радость!</p>
+                        <button class="special-offer-slider__control--prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
+                        <button class="special-offer-slider__control--next" type="button" aria-label="Кнопка следующего слайда">R</button>
+                        <a class="special-offer-slider__link" href="#">Открыть каталог</a>
+                    </li>
+                </ul>
 
-            <ul class="special-offer__slider special-offer-slider">
-                <li class="special-offer-slider__first-slide">
-                    <h3 class="special-offer-slider__title">Перфораторы</h3>
-                    <p class="special-offer-slider__text">Настоящие мужские игрушки</p>
-                    <button class="special-offer-slider__control--prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
-                    <button class="special-offer-slider__control--next" type="button" aria-label="Кнопка следующего слайда">R</button>
-                    <a class="special-offer-slider__link" href="#">Открыть каталог</a>
-                </li>
-                <li class="special-offer-slider__second-slide">
-                    <h3 class="special-offer-slider__title">Дрели</h3>
-                    <p class="special-offer-slider__text">Соседям на радость!</p>
-                    <button class="special-offer-slider__control--prev" type="button" aria-label="Кнопка предыдущего слайда">L</button>
-                    <button class="special-offer-slider__control--next" type="button" aria-label="Кнопка следующего слайда">R</button>
-                    <a class="special-offer-slider__link" href="#">Открыть каталог</a>
-                </li>
-            </ul>
+                <ul class="special-offer__second-list">
+                    <li class="special-offer__item special-offer__item--discount">
+                        <h3 class="special-offer__title">Скидки 50%</h3>
+                        <a class="special-offer__link special-offer__link--discount" href="#" aria-label="Ссылка на 350 товаров по скидкам">На 350 товаров</a>
+                    </li>
+                    <li class="special-offer__item special-offer__item--delivery">
+                        <h3 class="special-offer__title">Доставка</h3>
+                        <a class="special-offer__link special-offer__link--delivery" href="#" aria-label="Ссылка на подробности о доставке">Бесплатно</a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="popular-product">
@@ -172,7 +184,7 @@
         <section class="popular-manufacturer">
             <div class="popular-product__top-wrap">
                 <h2 class="popular-manufacturer__title">Популярные производители:</h2>
-                <a class="popular-manufacturer__link popular-all__link" href="#">Все производители</a>
+                <a class="popular-all__link" href="#">Все производители</a>
             </div>
             <ul class="popular-manufacturer__list">
                 <li class="popular-manufacturer__item">
@@ -246,121 +258,133 @@
             </ul>
         </section>
 
+        <div class="about-company__wrapper">
+            <section class="about-company">
+                <h2 class="about-company__title">Компания «Техномарт»</h2>
+                <p class="about-company__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+                <p class="about-company__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
 
-        <section class="about-company">
-            <h2 class="about-company__title">Компания «Техномарт»</h2>
-            <p class="about-company__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <p class="about-company__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-
-            <ul class="about-company__list">
-                <li class="about-company__item about-company-item">
-                    <p class="about-company-item__text">Деловые линии</p>
-                </li>
-                <li class="about-company__item about-company-item">
-                    <p class="about-company-item__text">Автотрейдинг</p>
-                </li>
-                <li class="about-company__item about-company-item">
-                    <p class="about-company-item__text">ЖелДорЭкспедиция</p>
-                </li>
-            </ul>
-            <a class="about-company__more-link" href="#">Подробнее о компании</a>
-        </section>
+                <ul class="about-company__list">
+                    <li class="about-company__item about-company-item">
+                        <p class="about-company-item__text">Деловые линии</p>
+                    </li>
+                    <li class="about-company__item about-company-item">
+                        <p class="about-company-item__text">Автотрейдинг</p>
+                    </li>
+                    <li class="about-company__item about-company-item">
+                        <p class="about-company-item__text">ЖелДорЭкспедиция</p>
+                    </li>
+                </ul>
+                <a class="about-company__more-link" href="#">Подробнее о компании</a>
+            </section>
 
 
-        <section class="contacts">
-            <h2 class="contacts__title">Контакты</h2>
-            <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис:</p>
+            <section class="contacts">
+                <h2 class="contacts__title">Контакты</h2>
+                <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис:</p>
 
-            <div class="map">
-                <a class="link-to-big-map" href="#" aria-label="Ссылка на карту большого размера"><img src="img/map.png" width="300" height="158" alt="Изображение карты"></a>
-            </div>
-            <div class="big-map-wrapper">
-                <!-- Здесь будет iframe -->
-            </div>
-            <a class="contacts__write-to-us" href="#">Заблудились? Напишите нам!</a>
-        </section>
-
+                <div class="map">
+                    <a class="link-to-big-map" href="#" aria-label="Ссылка на карту большого размера"><img src="img/map.png" width="300" height="158" alt="Изображение карты"></a>
+                </div>
+                <div class="big-map-wrapper">
+                    <!-- Здесь будет iframe -->
+                </div>
+                <a class="contacts__write-to-us" href="#">Заблудились? Напишите нам!</a>
+            </section>
+        </div>
     </main>
 
 
 
     <footer class="main-footer">
         <div class="footer-top">
-            <a class="main-footer__logo"><img class="footer-logo" src="img/footer-logo.jpg" alt="Логотип магазина" width="220" height="68"></a>
+            <div class="container">
+                <div class="footer-top__flex-wrapper">
+                    <div class="footer-contacts-wrapper">
+                        <a class="main-footer__logo"><img class="footer-logo" src="img/footer-logo.jpg" alt="Логотип магазина" width="220" height="68"></a>
+                        <p class="main-footer__contacts">
+                            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                            <a class="main-footer__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
+                        </p>
+                    </div>
+                    <div class="footer-nav-wrapper">
+                        <nav class="main-footer__navigation main-footer-navigation">
+                            <ul class="main-footer-navigation__list">
+                                <li class="main-footer-navigation__item">
+                                    <a class="main-footer-navigation__link" href="#">Главная</a>
+                                </li>
+                                <li class="main-footer-navigation__item">
+                                    <a class="main-footer-navigation__link" href="#">Компания</a>
+                                </li>
+                                <li class="main-footer-navigation__item">
+                                    <a class="main-footer-navigation__link" href="catalog.html">Кaталог</a>
+                                </li>
+                                <li class="main-footer-navigation__item">
+                                    <a class="main-footer-navigation__link" href="#">Новости</a>
+                                </li>
+                                <li class="main-footer-navigation__item">
+                                    <a class="main-footer-navigation__link" href="#">Спецпредложения</a>
+                                </li>
+                                <li class="main-footer-navigation__item">
+                                    <a class="main-footer-navigation__link" href="#">Доставка</a>
+                                </li>
+                                <li class="main-footer-navigation__item">
+                                    <a class="main-footer-navigation__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
 
-            <nav class="main-footer__navigation main-footer-navigation">
-                <ul class="main-footer-navigation__list">
-                    <li class="main-footer-navigation__item">
-                        <a class="main-footer-navigation__link" href="#">Главная</a>
-                    </li>
-                    <li class="main-footer-navigation__item">
-                        <a class="main-footer-navigation__link" href="#">Компания</a>
-                    </li>
-                    <li class="main-footer-navigation__item">
-                        <a class="main-footer-navigation__link" href="catalog.html">Кaталог</a>
-                    </li>
-                    <li class="main-footer-navigation__item">
-                        <a class="main-footer-navigation__link" href="#">Новости</a>
-                    </li>
-                    <li class="main-footer-navigation__item">
-                        <a class="main-footer-navigation__link" href="#">Спецпредложения</a>
-                    </li>
-                    <li class="main-footer-navigation__item">
-                        <a class="main-footer-navigation__link" href="#">Доставка</a>
-                    </li>
-                    <li class="main-footer-navigation__item">
-                        <a class="main-footer-navigation__link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
 
-            <p class="main-footer__contacts">
-                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                <a class="main-footer__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
-            </p>
-
-            <nav class="main-footer__second-navigation main-footer-second-navigation">
-                <ul class="main-footer-second-navigation__list">
-                    <li class="main-footer-second-navigation__item">
-                        <a class="main-footer-second-navigation__link" href="#">Материалы</a>
-                    </li>
-                    <li class="main-footer-second-navigation__item">
-                        <a class="main-footer-second-navigation__link" href="#">Техника</a>
-                    </li>
-                    <li class="main-footer-second-navigation__item">
-                        <a class="main-footer-second-navigation__link" href="#">Инструмент</a>
-                    </li>
-                    <li class="main-footer-second-navigation__item">
-                        <a class="main-footer-second-navigation__link" href="#">Спецпредложения</a>
-                    </li>
-                </ul>
-            </nav>
+                        <nav class="main-footer__second-navigation main-footer-second-navigation">
+                            <ul class="main-footer-second-navigation__list">
+                                <li class="main-footer-second-navigation__item">
+                                    <a class="main-footer-second-navigation__link" href="#">Материалы</a>
+                                </li>
+                                <li class="main-footer-second-navigation__item">
+                                    <a class="main-footer-second-navigation__link" href="#">Техника</a>
+                                </li>
+                                <li class="main-footer-second-navigation__item">
+                                    <a class="main-footer-second-navigation__link" href="#">Инструмент</a>
+                                </li>
+                                <li class="main-footer-second-navigation__item">
+                                    <a class="main-footer-second-navigation__link" href="#">Спецпредложения</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer-bottom">
-            <p class="copyright">&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
+            <div class="container">
+                <div class="footer-bottom__wrapper">
+                    <p class="copyright">&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
 
-            <div class="social-links">
-                <ul class="social-links__list">
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__link social-links__link_vk"><span class="visually-hidden">Мы в ВКонтакте</span></a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__link social-links__link_facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__link social-links__link_instagram"><span class="visually-hidden">Мы в Инстаграме</span></a>
-                    </li>
-                </ul>
+                    <div class="social-links">
+                        <ul class="social-links__list">
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link social-links__link_vk"><span class="visually-hidden">Мы в ВКонтакте</span></a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link social-links__link_facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__link social-links__link_instagram"><span class="visually-hidden">Мы в Инстаграме</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="developed-wrapper">
+                        <p class="main-footer__mail main-footer-mail">
+                            Обратная связь:
+                            <a class="main-footer-mail__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                        </p>
+                        <p class="main-footer__developed main-footer-developed">
+                            Разработано —
+                            <a class="main-footer-developed__link" href="https://htmlacademy.ru/" target="_blanc">htmlacademy.ru</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <p class="main-footer__mail main-footer-mail">
-                Обратная связь:
-                <a class="main-footer-mail__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p class="main-footer__developed main-footer-developed">
-                Разработано —
-                <a class="main-footer-developed__link" href="https://htmlacademy.ru/" target="_blanc">htmlacademy.ru</a>
-            </p>
         </div>
     </footer>
 
