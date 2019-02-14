@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
 	<link rel="shortcut icon" href="favicons.ico" type="image/x-icon">
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<title>Техномарт - интернет-магазин</title>
 </head>
@@ -35,7 +35,7 @@
 						<h1 class="page-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
 					</div>
 					<div class="header-contacts-wrapper">
-						<p class="header-phone"><a class="header-phone-link" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a></p>
+						<p class="header-phone"><a class="header-phone-link" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
 						<p class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					</div>
 					<div class="user-navigation-wrapper">
@@ -115,7 +115,7 @@
 					<a class="products__link" href="#">Все популярные товары</a>
 				</div>
 				<ul class="products__list">
-					<li class="products__item products-item">
+					<li class="products__item products-item" tabindex="0">
 	                    <h3 class="products-item__title">Перфоратор BOSCH BFG 9000</h3>
 	                    <img class="products-item__img" src="img/Perforator_1.jpg" alt="Изображение перфоратора BOSCH BFG 9000" width="218" height="170">
 	                    <del class="products-item__old-price">32500 Р.</del>
@@ -127,7 +127,7 @@
 	                        <ins class="products-item__new-price">25500 Р.</ins>
 	                    </div>
 	                </li>
-	                <li class="products__item products-item">
+	                <li class="products__item products-item" tabindex="0">
 	                    <h3 class="products-item__title">Перфоратор BOSCH BFG 3000</h3>
 	                    <img class="products-item__img" src="img/Perforator_2.jpg" alt="Изображение перфоратора BOSCH BFG 3000" width="218" height="170">
 	                    <del class="products-item__old-price">22500 Р.</del>
@@ -139,7 +139,7 @@
 	                        <ins class="products-item__new-price">15500 Р.</ins>
 	                    </div>
 	                </li>
-	                <li class="products__item products-item">
+	                <li class="products__item products-item" tabindex="0">
 	                    <h3 class="products-item__title">Перфоратор BOSCH BFG 6000</h3>
 	                    <img class="products-item__img" src="img/Perforator_3.jpg" alt="Изображение перфоратора BOSCH BFG 6000" width="218" height="170">
 	                    <del class="products-item__old-price">30500 Р.</del>
@@ -151,7 +151,7 @@
 	                        <ins class="products-item__new-price">25500 Р.</ins>
 	                    </div>
 	                </li>
-	                <li class="products__item products-item products-item_new products-item--no-price">
+	                <li class="products__item products-item products-item_new products-item--no-price" tabindex="0">
 	                    <span class="visually-hidden">Новинка</span>
 	                    <h3 class="products-item__title">Перфоратор BOSCH BFG 2000</h3>
 	                    <img class="products-item__img" src="img/Perforator_4.jpg" alt="Изображение перфоратора BOSCH BFG 2000" width="218" height="170">
@@ -223,24 +223,24 @@
 		        <ul class="service__list">
 		        	<li class="service__item service-item">
 		         		<input class="service__btn service__delivery-btn" type="radio" id="delivery-input" name="services" checked>
-		          		<label class="service-item__btn" for="delivery-input">Доставка</label>
-		          		<div class="service-description__delivery">
+		          		<label class="service-item__btn" for="delivery-input" tabindex="0">Доставка</label>
+		          		<div class="service-description service-description__delivery">
 		           			<h3 class="service-description__delivery-title">Доставка</h3>
 	                  		<p class="service-description__delivery-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
 		          		</div>
 		         	</li>
 		         	<li class="service__item service-item">
 		          		<input class="service__btn service__guaranty-btn" type="radio" id="guaranty-input" name="services">
-		          		<label class="service-item__btn" for="guaranty-input">Гарантия</label>
-		          		<div class="service-description__guaranty">
+		          		<label class="service-item__btn" for="guaranty-input" tabindex="0">Гарантия</label>
+		          		<div class="service-description service-description__guaranty">
 		           			<h3 class="service-description__guaranty-title">Гарантия</h3>
 	                  		<p class="service-description__guaranty-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
 		          		</div>
 		         	</li>
 		         	<li class="service__item service-item">
 		          		<input class="service__btn service__credit-btn" type="radio" id="credit-input" name="services">
-		          		<label class="service-item__btn" for="credit-input">Кредит</label>
-		          		<div class="service-description__credit">
+		          		<label class="service-item__btn" for="credit-input" tabindex="0">Кредит</label>
+		          		<div class="service-description service-description__credit">
 		           			<h3 class="service-description__credit-title">Кредит</h3>
 	                  		<p class="service-description__credit-text">Залезть в долговую яму стало проще!
 	                     	Кредитные консультанты придут вам на помощь..</p>
@@ -291,7 +291,7 @@
                         <a class="main-footer__logo"><img class="footer-logo" src="img/footer-logo.jpg" alt="Логотип магазина" width="220" height="68"></a>
                         <p class="main-footer__contacts">
                             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                            <a class="main-footer__phone" href="tel: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
+                            <a class="main-footer__phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
                         </p>
                     </div>
                     <div class="footer-nav-wrapper">
@@ -355,11 +355,11 @@
                     <div class="developed-wrapper">
                         <p class="main-footer__mail main-footer-mail">
                             Обратная связь:
-                            <a class="main-footer-mail__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                            <a class="main-footer-mail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                         </p>
                         <p class="main-footer__developed main-footer-developed">
                             Разработано —
-                            <a class="main-footer-developed__link" href="https://htmlacademy.ru/" target="_blanc">htmlacademy.ru</a>
+                            <a class="main-footer-developed__link" href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a>
                         </p>
                     </div>
                 </div>
