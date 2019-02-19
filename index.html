@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<link rel="shortcut icon" href="favicons.ico">
+    <link rel="shortcut icon" href="favicons.ico">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<title>Техномарт - интернет-магазин</title>
 </head>
@@ -256,7 +256,6 @@
 				<h2 class="about-company__title">Компания «Техномарт»</h2>
                 <p class="about-company__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
                 <p class="about-company__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-
                 <ul class="about-company__list">
                     <li class="about-company__item about-company-item">
                         <p class="about-company-item__text">Деловые линии</p>
@@ -273,14 +272,34 @@
 			<section class="contacts">
                 <h2 class="contacts__title">Контакты</h2>
                 <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис:</p>
-
                 <div class="map">
                     <a class="link-to-big-map" href="#" aria-label="Ссылка на карту большого размера"><img src="img/map.png" width="300" height="158" alt="Изображение карты"></a>
                 </div>
-                <div class="big-map-wrapper">
-                    <!-- Здесь будет iframe -->
-                </div>
                 <a class="contacts__write-to-us" href="#">Заблудились? Напишите нам!</a>
+                <div class="popup">
+                    <form class="popup__form popup-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <div class="popup__container top-popup-container">
+                            <div class="popup-form__user-name popup-form-user-name">
+                                <label class="popup-form-user-name__label">Ваше имя:</label>
+                                <input type="text" class="popup-form-user-name__input" name="user-name" placeholder="Имя Фамилия" required>
+                            </div>
+                            <div class="popup-form__user-mail popup-form-user-mail">
+                                <label class="popup-form-user-mail__label">Ваш e-mail:</label>
+                                <input type="email" class="popup-form-user-mail__input" name="user-mail" placeholder="email@example.com" required>
+                            </div>
+                            <div class="popup-form__msg popup-form-msg">
+                                <label class="popup-form-msg__label">Текст письма:</label>
+                                <textarea class="popup-form-msg__textarea" name="user-message" placeholder="В свободной форме"></textarea>
+                            </div>
+                        </div>
+                        <div class="popup__submit-wrap">
+                            <div class="popup__container">
+                                <button class="popup-form__submit-btn">Отправить</button>
+                            </div>
+                        </div>
+                        <button class="popup-form__close-btn" aria-label="Кнопка закрыть"></button>
+                    </form>
+                </div>
             </section>
         </div>
 	</main>
@@ -339,7 +358,6 @@
             <div class="container">
                 <div class="footer-bottom__wrapper">
                     <p class="copyright">&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
-
                     <div class="social-links">
                         <ul class="social-links__list">
                             <li class="social-links__item">
@@ -367,38 +385,11 @@
             </div>
         </div>
     </footer>
-
-
-      <div class="popup">
-        <form class="popup__form popup-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="popup__container top-popup-container">
-            <div class="popup-form__user-name popup-form-user-name">
-                <label class="popup-form-user-name__label">Ваше имя:</label>
-                <input type="text" class="popup-form-user-name__input" name="user-name" placeholder="Имя Фамилия" required>
-                </div>
-            <div class="popup-form__user-mail popup-form-user-mail">
-                <label class="popup-form-user-mail__label">Ваш e-mail:</label>
-                <input type="email" class="popup-form-user-mail__input" name="user-mail" placeholder="email@example.com" required>
-            </div>
-            <div class="popup-form__msg popup-form-msg">
-                <label class="popup-form-msg__label">Текст письма:</label>
-                <textarea class="popup-form-msg__textarea" name="user-message" placeholder="В свободной форме"></textarea>
-            </div>
-          </div>
-          <div class="popup__submit-wrap">
-            <div class="popup__container">
-              <button class="popup-form__submit-btn">Отправить</button>
-            </div>
-          </div>
-          <button class="popup-form__close-btn" aria-label="Кнопка закрыть"></button>
-        </form>
-      </div>
-
-      <div class="container">
+    <div class="container big-map-container">
         <div class="big-map">
-          <iframe class="big-map-viewport" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461617356!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1550313561035" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <button class="popup-form__close-btn" aria-label="Кнопка закрыть"></button>
+            <iframe class="big-map-viewport" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461617356!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1550313561035" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <button class="popup-form__close-btn" aria-label="Кнопка закрыть"></button>
         </div>
-      </div>
+    </div>
 </body>
 </html>

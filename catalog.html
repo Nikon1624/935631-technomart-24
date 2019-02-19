@@ -90,7 +90,11 @@
     	                <fieldset class="filters-form__price price-fieldset">
     	                    <legend class="price-fieldset__title">Цена:</legend>
     	                    <div class="range-wrap">
-    	                        <input class="price-fieldset__range" type="range" min="0" max="30000">
+                            <div class="scale">
+                              <div class="bar"></div>
+                            </div>
+                            <div class="control control-min"></div>
+                            <div class="control control-max"></div>
     	                    </div>
     	                    <p class="price-fieldset__range-info">
     	                        <input class="price-fieldset__output price-fieldset__output--min" type="text" name="min-price" placeholder="0">
@@ -183,7 +187,7 @@
     	                        <ins class="products-item__new-price">25500 Р.</ins>
     	                    </div>
     	                </li>
-    	                <li class="products__item products-item products-item_new products-item--no-price" tabindex="0">
+    	                <li class="products__item products-item products-item_new products-item--no-price no-opacity" tabindex="0">
     	                    <span class="visually-hidden">Новинка</span>
     	                    <h3 class="products-item__title">Перфоратор BOSCH BFG 2000</h3>
     	                    <img class="products-item__img" src="img/Perforator_4.jpg" alt="Изображение перфоратора BOSCH BFG 2000" width="218" height="170">
@@ -342,7 +346,6 @@
             <div class="container">
                 <div class="footer-bottom__wrapper">
                     <p class="copyright">&#169; 2010–2019 Компания «Техномарт» Все права защищены</p>
-
                     <div class="social-links">
                         <ul class="social-links__list">
                             <li class="social-links__item">
@@ -370,7 +373,6 @@
             </div>
         </div>
     </footer>
-
 
     <div class="popup">
         <b class="popup__info">Товар добавлен в корзину!</b>
