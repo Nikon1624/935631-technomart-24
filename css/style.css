@@ -45,11 +45,28 @@ img:not(.brands-item__img) {
     flex-wrap: wrap;
 }
 
-.img-wrap {
+.header__logo {
     position: relative;
+    box-sizing: border-box;
+    min-width: 220px;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    transition: 0.2s;
 }
 
-.img-wrap::after {
+.header__logo:hover {
+    background-color: #ca2c37;
+}
+
+.header__logo:active {
+    background-color: #ba2732;
+}
+
+.header__logo::after {
     content: "";
     position: absolute;
     bottom: -4px;
@@ -59,12 +76,12 @@ img:not(.brands-item__img) {
     background-color: #ee3643;
 }
 
-.img-wrap:hover::after {
+.header__logo:hover::after {
     background-color: #9a212a;
 }
 
-.img-wrap:active::after {
-    background-color: #8e1e26;
+.header__logo:active::after {
+    background-color: #b52933;
 }
 
 .logo {
@@ -132,7 +149,7 @@ img:not(.brands-item__img) {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 150px;
-    padding: 10px 10px;
+    padding: 10px 5px;
     padding-top: 12px;
     text-align: center;
     font-size: 17px;
@@ -144,12 +161,12 @@ img:not(.brands-item__img) {
 }
 
 .bookmarks {
-    padding-left: 25px;
+    padding-left: 20px;
     background: url(../img/icon/icon-bookmarkf.svg) 17px 12px no-repeat;
 }
 
 .cart {
-    padding-left: 28px;
+    padding-left: 23px;
     background: url(../img/icon/cart-iconf.svg) 18px 12px no-repeat;
 }
 
