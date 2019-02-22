@@ -131,7 +131,7 @@
 	                    <ins class="products-item__new-price">15500 Р.</ins>
 	                    <div class="products-item__hover popular-product-item-hover">
 	                        <h3 class="products-item-hover__title"><a class="products-hover__link" href="#">Перфоратор BOSCH BFG 3000</a></h3>
-	                        <button class="products-item-hover__btn--buy" type="button">Купить</button>
+	                        <button class="products-item-hover__btn--buy btn-buy--second" type="button">Купить</button>
 	                        <button class="products-item-hover__btn--to-the-bookmarks" type="button">В закладки</button>
 	                        <ins class="products-item__new-price">15500 Р.</ins>
 	                    </div>
@@ -143,7 +143,7 @@
 	                    <ins class="products-item__new-price">25500 Р.</ins>
 	                    <div class="products-item__hover popular-product-item-hover">
 	                        <h3 class="products-item-hover__title"><a class="products-hover__link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
-	                        <button class="products-item-hover__btn--buy" type="button">Купить</button>
+	                        <button class="products-item-hover__btn--buy btn-buy--third" type="button">Купить</button>
 	                        <button class="products-item-hover__btn--to-the-bookmarks" type="button">В закладки</button>
 	                        <ins class="products-item__new-price">25500 Р.</ins>
 	                    </div>
@@ -155,7 +155,7 @@
 	                    <ins class="products-item__new-price">12500 Р.</ins>
 	                    <div class="products-item__hover popular-product-item-hover">
 	                        <h3 class="products-item-hover__title"><a class="products-hover__link" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-	                        <button class="products-item-hover__btn--buy" type="button">Купить</button>
+	                        <button class="products-item-hover__btn--buy btn-buy--fourth" type="button">Купить</button>
 	                        <button class="products-item-hover__btn--to-the-bookmarks" type="button">В закладки</button>
 	                        <ins class="products-item__new-price">12500 Р.</ins>
 	                    </div>
@@ -272,7 +272,7 @@
                     <a class="link-to-big-map" href="#" aria-label="Ссылка на карту большого размера"><img src="img/map.png" width="300" height="158" alt="Изображение карты"></a>
                 </div>
                 <a class="contacts__write-to-us" href="#">Заблудились? Напишите нам!</a>
-                <div class="popup">
+                <div class="popup write-us-popup">
                     <form class="popup__form popup-form" action="https://echo.htmlacademy.ru/" method="post">
                         <div class="popup__container top-popup-container">
                             <div class="popup-form__user-name popup-form-user-name">
@@ -384,8 +384,23 @@
     <div class="container big-map-container">
         <div class="big-map">
             <iframe class="big-map-viewport" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461617356!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1550313561035" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <button class="popup-form__close-btn" aria-label="Кнопка закрыть"></button>
+            <button class="popup-form__close-btn map-close-btn" aria-label="Кнопка закрыть"></button>
         </div>
     </div>
+    <div class="buy-popup">
+        <div class="popup-catalog">
+            <b class="popup__info">Товар добавлен в корзину!</b>
+            <ul class="popup__list">
+                <li class="popup__item">
+                    <a class="popup__link" href="#">Оформить заказ</a>
+                </li>
+                <li class="popup__item">
+                    <button class="popup__button" type="button">Продолжить покупки</button>
+                </li>
+            </ul>
+            <button class="popup-form__close-btn buy-popup-close" aria-label="Кнопка закрыть"></button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

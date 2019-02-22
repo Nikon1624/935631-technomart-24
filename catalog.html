@@ -166,7 +166,7 @@
     	                    <ins class="products-item__new-price">15500 Р.</ins>
     	                    <div class="products-item__hover popular-product-item-hover">
     	                        <h3 class="products-item-hover__title"><a class="products-hover__link" href="#">Перфоратор BOSCH BFG 3000</a></h3>
-    	                        <button class="products-item-hover__btn--buy" type="button">Купить</button>
+    	                        <button class="products-item-hover__btn--buy btn-buy--catalog" type="button">Купить</button>
     	                        <button class="products-item-hover__btn--to-the-bookmarks" type="button">В закладки</button>
     	                        <ins class="products-item__new-price">15500 Р.</ins>
     	                    </div>
@@ -370,17 +370,20 @@
         </div>
     </footer>
 
-    <div class="popup">
-        <b class="popup__info">Товар добавлен в корзину!</b>
-        <ul class="popup__list">
-            <li class="popup__item">
-                <a class="popup__link" href="#">Оформить заказ</a>
-            </li>
-            <li class="popup__item">
-                <button class="popup__button" type="button">Продолжить покупки</button>
-            </li>
-        </ul>
-        <button class="popup-form__close-btn" aria-label="Кнопка закрыть"></button>
+    <div class="buy-popup buy-popup--catalog">
+        <div class="popup-catalog">
+            <b class="popup__info">Товар добавлен в корзину!</b>
+            <ul class="popup__list">
+                <li class="popup__item">
+                    <a class="popup__link" href="#">Оформить заказ</a>
+                </li>
+                <li class="popup__item">
+                    <button class="popup__button" type="button">Продолжить покупки</button>
+                </li>
+            </ul>
+            <button class="popup-form__close-btn buy-popup-close" aria-label="Кнопка закрыть"></button>
+        </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
