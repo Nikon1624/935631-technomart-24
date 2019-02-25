@@ -88,6 +88,3 @@ buyButtonFourth.addEventListener("click", function(evt) {
     evt.preventDefault();
     buyPopup.classList.add("buy-popup-show");
 });
-
-
-
