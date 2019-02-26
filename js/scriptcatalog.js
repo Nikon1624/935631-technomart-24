@@ -69,3 +69,15 @@ buyButtonNinth.addEventListener("click", function(evt) {
     evt.preventDefault();
     buyPopup.classList.add("buy-popup-show");
 });
+
+
+var buyBtns = document.querySelectorAll(".products-item-hover__btn--buy"); 
+var bookmarkBtns = document.querySelectorAll(".products-item-hover__btn--to-the-bookmarks");
+for (var i = 0; i < buyBtns.length; i++) { 
+    buyBtns[i].addEventListener("focus", function() {
+        this.parentNode.classList.add("focus"); 
+    }); 
+    bookmarkBtns[i].addEventListener("blur", function() { 
+        this.parentNode.classList.remove("focus"); 
+    }); 
+}

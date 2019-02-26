@@ -11,6 +11,13 @@ var buyPopupClose = document.querySelector(".buy-popup-close");
 var buyButtonSecond = document.querySelector(".btn-buy--second");
 var buyButtonThird = document.querySelector(".btn-buy--third");
 var buyButtonFourth = document.querySelector(".btn-buy--fourth");
+var serviceDeliveryShow = document.querySelector(".service-list-item__link--first");
+var deliveryShow = document.querySelector(".service-description__delivery");
+var serviceGuarantyShow = document.querySelector(".service-list-item__link--second");
+var guarantyShow = document.querySelector(".service-description__guaranty");
+var serviceCreditShow = document.querySelector(".service-list-item__link--third");
+var creditShow = document.querySelector(".service-description__credit");
+
 
 
 writeUs.addEventListener("click", function(evt) {
@@ -88,3 +95,77 @@ buyButtonFourth.addEventListener("click", function(evt) {
     evt.preventDefault();
     buyPopup.classList.add("buy-popup-show");
 });
+
+
+serviceDeliveryShow.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    guarantyShow.classList.remove("delivery-show");
+    creditShow.classList.remove("delivery-show");
+    deliveryShow.classList.add("delivery-show");
+    serviceDeliveryShow.classList.add("service-list-item__link--current");
+    serviceGuarantyShow.classList.remove("service-list-item__link--current");
+    serviceCreditShow.classList.remove("service-list-item__link--current");
+});
+
+serviceGuarantyShow.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    deliveryShow.classList.remove("delivery-show");
+    creditShow.classList.remove("delivery-show");
+    guarantyShow.classList.add("delivery-show");
+    serviceGuarantyShow.classList.add("service-list-item__link--current");
+    serviceDeliveryShow.classList.remove("service-list-item__link--current");
+    serviceCreditShow.classList.remove("service-list-item__link--current");
+});
+
+serviceCreditShow.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    deliveryShow.classList.remove("delivery-show");
+    guarantyShow.classList.remove("delivery-show");
+    creditShow.classList.add("delivery-show");
+    serviceCreditShow.classList.add("service-list-item__link--current");
+    serviceDeliveryShow.classList.remove("service-list-item__link--current");
+    serviceGuarantyShow.classList.remove("service-list-item__link--current");
+});
+
+
+serviceDeliveryShow.addEventListener("focus", function(evt) {
+    evt.preventDefault();
+    guarantyShow.classList.remove("delivery-show");
+    creditShow.classList.remove("delivery-show");
+    deliveryShow.classList.add("delivery-show");
+    serviceDeliveryShow.classList.add("service-list-item__link--current");
+    serviceGuarantyShow.classList.remove("service-list-item__link--current");
+    serviceCreditShow.classList.remove("service-list-item__link--current");
+});
+
+serviceGuarantyShow.addEventListener("focus", function(evt) {
+    evt.preventDefault();
+    deliveryShow.classList.remove("delivery-show");
+    creditShow.classList.remove("delivery-show");
+    guarantyShow.classList.add("delivery-show");
+    serviceGuarantyShow.classList.add("service-list-item__link--current");
+    serviceDeliveryShow.classList.remove("service-list-item__link--current");
+    serviceCreditShow.classList.remove("service-list-item__link--current");
+});
+
+serviceCreditShow.addEventListener("focus", function(evt) {
+    evt.preventDefault();
+    deliveryShow.classList.remove("delivery-show");
+    guarantyShow.classList.remove("delivery-show");
+    creditShow.classList.add("delivery-show");
+    serviceCreditShow.classList.add("service-list-item__link--current");
+    serviceDeliveryShow.classList.remove("service-list-item__link--current");
+    serviceGuarantyShow.classList.remove("service-list-item__link--current");
+});
+
+
+var buyBtns = document.querySelectorAll(".products-item-hover__btn--buy"); 
+var bookmarkBtns = document.querySelectorAll(".products-item-hover__btn--to-the-bookmarks");
+for (var i = 0; i < buyBtns.length; i++) { 
+    buyBtns[i].addEventListener("focus", function() {
+        this.parentNode.classList.add("focus"); 
+    }); 
+    bookmarkBtns[i].addEventListener("blur", function() { 
+        this.parentNode.classList.remove("focus"); 
+    }); 
+}

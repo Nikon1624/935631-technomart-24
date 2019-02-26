@@ -40,6 +40,7 @@
 
 
 body {
+    min-width: 960px;
     margin: 0;
     font-family: Cuprum, Arial, sans-serif;
 }
@@ -524,9 +525,6 @@ img:not(.brands-item__img) {
     text-align: center;
     color: #ffffff;
     background-color: rgba(0, 0, 0, .1);
-    -webkit-transition: 0.2s all;
-    -o-transition: 0.2s all;
-    transition: 0.2s all;
 }
 
 .top-list__link:hover {
@@ -563,9 +561,7 @@ img:not(.brands-item__img) {
     box-sizing: border-box;
     width: 1240px;
     height: 100%;
-    -webkit-transition: 0.8s all;
-    -o-transition: 0.8s all;
-    transition: 0.8s all;
+
 }
 
 .slider__item {
@@ -596,7 +592,7 @@ img:not(.brands-item__img) {
 }
 
 .slider__link {
-    display: inline-block;
+    display: block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 195px;
@@ -865,6 +861,7 @@ img:not(.brands-item__img) {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
     color: #ffffff;
     background: url(../img/icon/cart-iconfb.svg) 12px 11px no-repeat;
     background-color: #63a63e;
@@ -898,6 +895,7 @@ img:not(.brands-item__img) {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
     color: #32425c;
     background-color: #ffffff;
     -webkit-transition: 0.2s all;
@@ -1105,13 +1103,12 @@ img:not(.brands-item__img) {
 
 .service {
     background-color: #f4f8f9;
-    padding-bottom: 100px;
 }
 
 .service-title-wrapper {
     padding-top: 67px;
     padding-right: 530px;
-    margin-bottom: 72px;
+    margin-bottom: 70px;
 }
 
 .service__title {
@@ -1132,7 +1129,9 @@ img:not(.brands-item__img) {
 
 .service__list {
     position: relative;
+    box-sizing: border-box;
     width: 240px;
+    margin-bottom: 98px;
 }
 
 .service__list::after {
@@ -1146,127 +1145,63 @@ img:not(.brands-item__img) {
     right: 0;
 }
 
-.service__delivery-btn, .service__guaranty-btn, .service__credit-btn {
-    display: none;
-}
-
-.service__item {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
+.service-list-item__link {
+    display: block;
+    padding: 15px 22px;
+    border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
+    font-family: Cuprum, Arial, sans-serif;
     font-size: 21px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: bold;
     color: #ffffff;
     background-color: #32425c;
 }
 
-.service-item__btn {
-    display: block;
-    -webkit-box-sizing: border-box;
+.service-list-item__link--current {
+    background-color: #ffffff;
+    color: #32425c;
+    border-color: #ffffff;
+}
+
+.service-list-item__link:not(.service-list-item__link--current):hover {
+    background-color: #293449;
+}
+
+.service__description, .service-description__delivery, .service-description__guaranty, .service-description__credit {
     box-sizing: border-box;
-    padding-right: 15px;
-    padding-top: 11px;
-    padding-left: 22px;
-    padding-bottom: 18px;
-    border-bottom: 1px solid #293449;
-    border-top: 1px solid #405069;
+    width: 620px;
+    padding-bottom: 70px;
 }
-
-.service-item__btn:hover {
-    cursor: pointer;
-}
-
-.service__delivery-btn:checked + .service-item__btn, .service-item__btn:focus {
-    color: #32425c;
-    background-color: #ffffff;
-    border: none;
-    outline: none;
-}
-
-.service__guaranty-btn:checked + .service-item__btn, .service-item__btn:focus {
-    color: #32425c;
-    background-color: #ffffff;
-    border: none;
-    outline: none;
-}
-
-.service__credit-btn:checked + .service-item__btn, .service-item__btn:focus {
-    color: #32425c;
-    background-color: #ffffff;
-    border: none;
-    outline: none;
-}
-
 .service__description {
-    position: relative;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 620px;
+    padding-bottom: 0;
 }
 
-.service-description__delivery, .service-description__guaranty, .service-description__credit {
-    position: absolute;
-    top: 0;
-    right: -700px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 620px;
-    padding-right: 340px;
-    padding-bottom: 80px;
-    background-color: #f4f8f9;
-    opacity: 0;
-    -webkit-transform: scale(0.3);
-    -ms-transform: scale(0.3);
-    transform: scale(0.3);
-    -webkit-transition: 0.4s all;
-    -o-transition: 0.4s all;
-    transition: 0.4s all;
-}
-
-.service-description__credit {
-    background-image: url(../img/services-credit.png);
-    background-repeat: no-repeat;
-    background-position: 100% 20px;
-}
-
-.service-description__guaranty {
-    padding-right: 280px;
-    background-image: url(../img/services-guarantee.png);
-    background-repeat: no-repeat;
-    background-position: 100% 20px;
-}
-
-.service-description__delivery {
-    background-image: url(../img/services-delivery.png);
-    background-repeat: no-repeat;
-    background-position: 100% 20px;
-}
-
-.service-description__delivery-title, .service-description__guaranty-title, .service-description__credit-title {
+.service-description__delivery-title, .service-description__guaranty-title, 
+.service-description__credit-title {
     margin: 0;
-    margin-top: -5px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 36px;
     line-height: 36px;
-    font-weight: 400;
+    font-weight: normal;
     text-transform: uppercase;
     color: #32425c;
 }
 
-.service-description__delivery-text, .service-description__guaranty-text, .service-description__credit-text {
+.service-description__delivery-text, .service-description__guaranty-text, 
+.service-description__credit-text {
     margin: 0;
-    margin-bottom: 20px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
-    font-weight: 400;
-    color: #000000;
+}
+
+.service-description__credit-text {
+    margin-bottom: 30px;
 }
 
 .service-description__credit-link {
     display: block;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 195px;
     padding: 10px 0;
@@ -1278,8 +1213,6 @@ img:not(.brands-item__img) {
     text-align: center;
     color: #ffffff;
     background-color: #ff5357;
-    -webkit-transition: 0.2s all;
-    -o-transition: 0.2s all;
     transition: 0.2s all;
 }
 
@@ -1291,29 +1224,34 @@ img:not(.brands-item__img) {
     background-color: #8e1e26;
 }
 
-.service__delivery-btn:checked ~ .service-description__delivery {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+.service-description__credit {
+    padding-right: 280px;
+    background-image: url(../img/services-credit.png);
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
 }
 
-.service__guaranty-btn:checked ~ .service-description__guaranty {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+.service-description__guaranty {
+    padding-right: 240px;
+    background-image: url(../img/services-guarantee.png);
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
 }
 
-.service__credit-btn:checked ~ .service-description__credit {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+.service-description__delivery {
+    padding-right: 280px;
+    background-image: url(../img/services-delivery.png);
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
 }
 
-.service__btn:not(:checked) + .service-item__btn:hover {
-    background-color: #293449;
+.service-main-flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-description__block {
+    display: none;
 }
 
 .about-company-container {
@@ -1769,6 +1707,7 @@ img:not(.brands-item__img) {
 
 .breadcrums__link--main {
     display: inline-block;
+    vertical-align: baseline;
     width: 15px;
     height: 12px;
     padding-bottom: 3px;
@@ -2129,6 +2068,7 @@ img:not(.brands-item__img) {
 
 .sort-indicators--up {
     display: inline-block;
+    vertical-align: baseline;
     margin-right: 15px;
     border: 10px solid #000000;
     border-top-width: 0;
@@ -2144,6 +2084,7 @@ img:not(.brands-item__img) {
 
 .sort-indicators--down {
     display: inline-block;
+    vertical-align: baseline;
     border: 10px solid #000000;
     border-bottom-width: 0;
     border-left-color: transparent;
@@ -2248,19 +2189,11 @@ img:not(.brands-item__img) {
     transform: scale(1);
 }
 
-.service-item__btn:focus + .service-description {
-    opacity: 1;
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
-    z-index: 10;
-}
-
 .popup {
     display: none;
-    position: absolute;
-    top: 150px;
-    left: -490px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
     z-index: 10;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -2270,6 +2203,7 @@ img:not(.brands-item__img) {
     -webkit-box-shadow: 0 10px 10px 8px rgba(0, 0, 0, .5);
     box-shadow: 0 10px 10px 8px rgba(0, 0, 0, .5);
     margin: 0 auto; /*  Test  */
+    margin-left: -310px;
     background-color: #ffffff;
 }
 
@@ -2398,19 +2332,19 @@ img:not(.brands-item__img) {
 
 .big-map-container {
     display: none;
-    position: absolute;
-    top: 2340px;
+    position: fixed;
+    top: 50%;
     left: 50%;
     margin-left: -480px;
+    margin-top: -225px;
 }
 
 .big-map {
     position: relative;
-    width: 100%;
+    width: 940px;
     height: 450px;
     -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
-    margin: 20px auto; /*  Test  */
 }
 
 .big-map-viewport {
@@ -2558,7 +2492,7 @@ img:not(.brands-item__img) {
 .buy-popup {
     display: none;
     position: fixed;
-    top: 450px;
+    top: 30%;
     left: 50%;
     margin-left: -310px;
     z-index: 20;
@@ -2574,4 +2508,13 @@ img:not(.brands-item__img) {
 
 iframe {
     border: none;
+}
+
+.delivery-show {
+    display: block;
+}
+
+.focus {
+    opacity: 1;
+    transform: scale(1);
 }
