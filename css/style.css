@@ -1177,7 +1177,7 @@ img:not(.brands-item__img) {
     padding-bottom: 0;
 }
 
-.service-description__delivery-title, .service-description__guaranty-title, 
+.service-description__delivery-title, .service-description__guaranty-title,
 .service-description__credit-title {
     margin: 0;
     margin-bottom: 20px;
@@ -1188,7 +1188,7 @@ img:not(.brands-item__img) {
     color: #32425c;
 }
 
-.service-description__delivery-text, .service-description__guaranty-text, 
+.service-description__delivery-text, .service-description__guaranty-text,
 .service-description__credit-text {
     margin: 0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -1707,7 +1707,7 @@ img:not(.brands-item__img) {
 
 .breadcrums__link--main {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     width: 15px;
     height: 12px;
     padding-bottom: 3px;
@@ -2068,7 +2068,7 @@ img:not(.brands-item__img) {
 
 .sort-indicators--up {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     margin-right: 15px;
     border: 10px solid #000000;
     border-top-width: 0;
@@ -2084,7 +2084,7 @@ img:not(.brands-item__img) {
 
 .sort-indicators--down {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     border: 10px solid #000000;
     border-bottom-width: 0;
     border-left-color: transparent;
@@ -2225,7 +2225,7 @@ img:not(.brands-item__img) {
 
 .popup-form__user-mail, .popup-form__user-name {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: top;
 }
 
 .popup-form__user-name {
